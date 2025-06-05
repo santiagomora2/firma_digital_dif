@@ -55,45 +55,6 @@ def verificar_firma(firma, hash_original, clave_publica):
     hash_verificado = pow(firma, e, n)
     return hash_verificado == hash_original
 
-
-def ejemplo_en_consola():
-
-    # Paso 1: Generar llaves o cargarlas desde disco
-    private_key_bytes, public_key_bytes, _ = generar_llaves()
-
-    # Paso 1.1: Cambiar las llaves de bytes a llaves
-    private_key = serialization.load_pem_private_key(
-        private_key_bytes,
-        password=None,
-        backend=default_backend()
-    )
-
-    public_key = serialization.load_pem_public_key(
-        public_key_bytes,
-        backend=default_backend()
-    )
-
-    # Paso 2: Extraer texto del PDF
-    texto = extraer_texto_pdf("ejemplo.pdf")
-    print(f'Texto extraído: {texto}')
-
-    print('--------')
-
-    # Paso 3: Generar hash del contenido
-    hash_pdf = generar_hash(texto)
-
-    print(f'Hash creado: {hash_pdf}')
-
-    print('--------')
-
-    # Paso 4: Firmar
-    firma = firmar_hash(hash_pdf, private_key)
-    print("Firma generada:", firma)
-
-    # Paso 5: Verificar
-    autenticado = verificar_firma(firma, hash_pdf, public_key)
-    print("¿Firma válida?", autenticado)
-
 def interfaz_streamlit():
     st.title("🔐 Firma y Verificación de PDFs con RSA")
 
