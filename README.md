@@ -11,7 +11,7 @@ El flujo de trabajo está dividido en tres roles funcionales, cada uno represent
 ### 🔐 1. Generación de llaves (`dif_admin.py`)
 El administrador del DIF:
 - Ingresa el nombre del funcionario.
-- Genera un par de llaves RSA de 256 bits (clave pública y privada).
+- Genera un par de llaves RSA de 2048 bits (clave pública y privada).
 - Guarda la clave pública y el módulo en el archivo `users_keys.csv`.
 - Comparte **privadamente** la clave privada al funcionario para firmar documentos.
 
