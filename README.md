@@ -55,6 +55,7 @@ El funcionario del Registro Civil:
     ├── rc.py                   # Verificación para el Registro Civil
 
 📄 ejemplo.pdf                 # PDF de ejemplo para pruebas
+📄 clave_privada_menganito.pem # Llave privada de ejemplo para pruebas
 📄 functions.py                # Funciones de la interfaz e interacción con el usuario
 📄 key_functions.py            # Funciones relacionadas a RSA, hash y firma
 📄 main.py                     # Interfaz principal de la app (inicio)
@@ -78,6 +79,13 @@ graph TD
     E -->|Carga PDF, .sig y nombre| F[Verificación con clave pública]
     F -->|Valida firma| G[Documento autenticado]
 ```
+
+# 🔐 Seguridad
+Las claves privadas nunca se almacenan, solo se muestran para su descarga inmediata.
+
+El archivo `users_keys.csv` contiene solo información pública (clave pública y módulo).
+
+Se recomienda proteger la clave privada del funcionario (por ejemplo, entregándola mediante un canal seguro o usando encriptación adicional).
 
 # 🧪 Tecnologías utilizadas
 * `Python 3.10+`
@@ -114,12 +122,9 @@ pip install -r requirements.txt
 python -m streamlit run main.py
 ```
 
-# 🔐 Seguridad
-Las claves privadas nunca se almacenan, solo se muestran para su descarga inmediata.
+# Pruebas
 
-El archivo `users_keys.csv` contiene solo información pública (clave pública y módulo).
-
-Se recomienda proteger la clave privada del funcionario (por ejemplo, entregándola mediante un canal seguro o usando encriptación adicional).
+Como ejemplo, se agregó al funcionario 'Menganito' en el CSV y su llave privada, a modo de hacer pruebas con el archivo `ejemplo.pdf`
 
 # ✍️ Autores
 * Santiago Mora Cruz
