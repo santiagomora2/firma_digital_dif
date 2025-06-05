@@ -99,7 +99,7 @@ graph TD
 1. Clona el repositorio:
 
 ```
-git clone https://github.com/tu-usuario/firma-dif.git
+git clone https://github.com/santiagomora2/firma_digital_dif.git
 cd firma-dif
 ```
 
