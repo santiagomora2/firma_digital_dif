@@ -121,8 +121,8 @@ El archivo `users_keys.csv` contiene solo información pública (clave pública 
 Se recomienda proteger la clave privada del funcionario (por ejemplo, entregándola mediante un canal seguro o usando encriptación adicional).
 
 # ✍️ Autores
-Santiago Mora Cruz
-Gabriel Reynoso Escamilla
-Guillermo Villegas Morales
+* Santiago Mora Cruz
+* Gabriel Reynoso Escamilla
+* Guillermo Villegas Morales
 
 Estudiantes de Ingeniería en Ciencia de Datos y Matemáticas
