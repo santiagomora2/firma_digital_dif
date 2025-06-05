@@ -122,7 +122,7 @@ pip install -r requirements.txt
 python -m streamlit run main.py
 ```
 
-# Pruebas
+# ⚗️ Pruebas
 
 Como ejemplo, se agregó al funcionario 'Menganito' en el CSV, así como su clave privada. Esto a modo de hacer pruebas con el archivo `ejemplo.pdf`.
 
