@@ -51,13 +51,14 @@ El funcionario del Registro Civil:
 
 📁 pages/
     ├── dif.py                  # Interfaz de firma para funcionarios del DIF
-    ├── dif_admin.py           # Administración: generación de llaves
-    ├── rc.py                  # Verificación para el Registro Civil
+    ├── dif_admin.py            # Administración: generación de llaves
+    ├── rc.py                   # Verificación para el Registro Civil
 
-📄 ejemplo.pdf                  # PDF de ejemplo para pruebas
-📄 functions.py                 # Funciones de la interfaz e interacción con el usuario
+📄 ejemplo.pdf                 # PDF de ejemplo para pruebas
+📄 functions.py                # Funciones de la interfaz e interacción con el usuario
 📄 key_functions.py            # Funciones relacionadas a RSA, hash y firma
 📄 main.py                     # Interfaz principal de la app (inicio)
+📄 requirements.txt            # Librerías de python requeridas para que la interfaz funcione
 📄 users_keys.csv              # Registro de claves públicas de los usuarios
 📄 README.md                   # Este documento
 📄 LICENSE                     # Licencia del proyecto
