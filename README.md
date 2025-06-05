@@ -124,7 +124,7 @@ python -m streamlit run main.py
 
 # Pruebas
 
-Como ejemplo, se agregó al funcionario 'Menganito' en el CSV y su llave privada, a modo de hacer pruebas con el archivo `ejemplo.pdf`
+Como ejemplo, se agregó al funcionario 'Menganito' en el CSV, así como su clave privada. Esto a modo de hacer pruebas con el archivo `ejemplo.pdf`.
 
 # ✍️ Autores
 * Santiago Mora Cruz
