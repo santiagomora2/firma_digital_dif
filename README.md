@@ -55,7 +55,7 @@ El funcionario del Registro Civil:
     ├── rc.py                  # Verificación para el Registro Civil
 
 📄 ejemplo.pdf                  # PDF de ejemplo para pruebas
-📄 functions.py                 # Funciones auxiliares generales
+📄 functions.py                 # Funciones de la interfaz e interacción con el usuario
 📄 key_functions.py            # Funciones relacionadas a RSA, hash y firma
 📄 main.py                     # Interfaz principal de la app (inicio)
 📄 users_keys.csv              # Registro de claves públicas de los usuarios
