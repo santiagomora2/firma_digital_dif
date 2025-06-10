@@ -35,7 +35,13 @@ def main():
 
     if nombre_firmante:
 
-        public_key = extract_key_from_df(nombre_firmante, df)
+        try:
+
+            public_key = extract_key_from_df(nombre_firmante, df)
+
+        except:
+    
+            st.error('Funcionario no existe en la base de datos.')
 
     st.markdown("### 📄 Sube la firma del PDF")
 
